@@ -1,0 +1,1 @@
+export const OPTION_BANNER_MY_INFO = 'My Info';
