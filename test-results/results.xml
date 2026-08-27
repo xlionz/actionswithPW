@@ -1,0 +1,73 @@
+<testsuites id="" name="" tests="3" failures="0" skipped="0" errors="1" time="34.969145000000005">
+<testsuite name="suace\check-the-all-products.spec.ts" timestamp="2026-08-27T02:48:09.803Z" hostname="chromium" tests="1" failures="0" skipped="0" time="4.158" errors="0">
+<testcase name="Purchase selected products @smokeLogin @smoke @regression @e2e @checknow › User completes a purchase after validating the shopping cart total" classname="suace\check-the-all-products.spec.ts" time="4.158">
+<system-out>
+<![CDATA[Products selected: Sauce Labs Backpack
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="suace\check-the-all-products.spec.ts" timestamp="2026-08-27T02:48:09.803Z" hostname="firefox" tests="1" failures="0" skipped="0" time="31.896" errors="1">
+<testcase name="Purchase selected products @smokeLogin @smoke @regression @e2e @checknow › User completes a purchase after validating the shopping cart total" classname="suace\check-the-all-products.spec.ts" time="31.896">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|suace-check-the-all-produc-c1170-ing-the-shopping-cart-total-firefox\test-failed-1.png]]
+
+[[ATTACHMENT|suace-check-the-all-produc-c1170-ing-the-shopping-cart-total-firefox\video.webm]]
+
+[[ATTACHMENT|suace-check-the-all-produc-c1170-ing-the-shopping-cart-total-firefox\error-context.md]]
+
+[[ATTACHMENT|suace-check-the-all-produc-c1170-ing-the-shopping-cart-total-firefox\trace.zip]]
+]]>
+</system-out>
+<error message="Test timeout of 30000ms exceeded." type="Error">
+<![CDATA[  [firefox] › suace\check-the-all-products.spec.ts:47:9 › Purchase selected products @smokeLogin @smoke @regression @e2e @checknow › User completes a purchase after validating the shopping cart total › When he should select multiple products 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.count: Test timeout of 30000ms exceeded.
+
+       at ..\src\pages\checkProducts.ts:54
+
+      52 |
+      53 |             do{
+    > 54 |                 newRandomProducts = Math.floor(Math.random() * await this.listProducts.count());
+         |                                                                                        ^
+      55 |             }
+      56 |             while(validateANumber(productsSelected, newRandomProducts) === false);
+      57 |
+        at CheckProducts.selectMultipleProductsRandom (D:\newRepoActions\src\pages\checkProducts.ts:54:88)
+        at D:\newRepoActions\tests\suace\check-the-all-products.spec.ts:24:34
+        at checkProducts (D:\newRepoActions\tests\suace\check-the-all-products.spec.ts:23:5)
+        at D:\newRepoActions\tests\suace\check-the-all-products.spec.ts:48:9
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\suace-check-the-all-produc-c1170-ing-the-shopping-cart-total-firefox\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\suace-check-the-all-produc-c1170-ing-the-shopping-cart-total-firefox\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\suace-check-the-all-produc-c1170-ing-the-shopping-cart-total-firefox\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\test-results\suace-check-the-all-produc-c1170-ing-the-shopping-cart-total-firefox\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\test-results\suace-check-the-all-produc-c1170-ing-the-shopping-cart-total-firefox\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</error>
+</testcase>
+</testsuite>
+<testsuite name="suace\check-the-all-products.spec.ts" timestamp="2026-08-27T02:48:09.803Z" hostname="webkit" tests="1" failures="0" skipped="0" time="2.834" errors="0">
+<testcase name="Purchase selected products @smokeLogin @smoke @regression @e2e @checknow › User completes a purchase after validating the shopping cart total" classname="suace\check-the-all-products.spec.ts" time="2.834">
+<system-out>
+<![CDATA[Products selected: Test.allTheThings() T-Shirt (Red)
+]]>
+</system-out>
+</testcase>
+</testsuite>
+</testsuites>
